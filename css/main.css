@@ -357,9 +357,15 @@ body {
 }
 
 .social-media__dashboard--card-top:nth-child(3) {
-  border-top: 3px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, rgba(253, 196, 104, 0.5), rgba(223, 73, 150, 0.8));
+  border-top: 3px solid #df4996;
+}
+
+@supports (border-top: 3px solid) {
+  .social-media__dashboard--card-top:nth-child(3) {
+    border-top: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, rgba(253, 196, 104, 0.5), rgba(223, 73, 150, 0.8));
+  }
 }
 
 .social-media__dashboard--card-top:last-child {
